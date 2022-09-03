@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw</title>
+</head>
+<body>
+
+
+    <%- include('dashboard') %>
+
+    <div class="content-details">  
+        <h1>Hello  <%=user.firstName  %> <%=user.lastName %></h1>
+        <h2></h2>
+        <form action="/user/info" method="POST">
+             <label>Amount</label>  <BR>
+              <input type="text" id="withdraw" placeholder="Enter amount" name="withdraw">
+            <button>Withdraw</button></a>
+        </form>
+        <h2>Balance: <%=remainingBalance %> PESOS </h2></div>
+
+</body>
+</html>
